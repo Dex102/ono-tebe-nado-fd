@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 89px 50px 91px;
+  padding: 89px 49px 91px;
 }
 
 .header__menu {
@@ -263,7 +263,7 @@
   display: grid;
   margin-top: 60px;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 89px 50px 84px;
+  padding: 89px 49px 84px;
 }
 
 .footer__menu {
