@@ -9,25 +9,23 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
+
   <body>
     <header class="header">
       <nav>
         <ul class="header__menu">
-          <li class="header__menu-list-item"><a href="#0">главная</a></li>
-          <li class="header__menu-list-item"><a href="#0">посмотреть лоты</a></li>
-          <li class="header__menu-list-item"><a href="#0">об аукционе</a></li>
+          <li class="header__menu-list-item no-circle"><a href="#0" class="menu-link_active">главная</a></li>
+          <li class="header__menu-list-item"><a href="#0" class="menu-link_active">посмотреть лоты</a></li>
+          <li class="header__menu-list-item"><a href="#0" class="menu-link_active">об аукционе</a></li>
         </ul>
       </nav>
-      
       <a class="header__logo" href="#">
         <img src="./images/logo-black.svg" alt="Логотип сайта">
       </a>
-
-      <address class="address">
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
-        
       </address>
     </header>
 
@@ -43,7 +41,6 @@
             <h2 class="cover__description-text">Аукцион вещей, в которые никто не верил</h2>
             <button class="bet-button">сделать ставку</button>
           </div>
-
       </section>
 
       <section class="lots">
@@ -60,12 +57,11 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            
             <a href="#0" class="card-link">
               <article class="card card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                <p class="card__text no_underline" >Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
                   В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
                   И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </article>
@@ -105,10 +101,24 @@
       </section>
     </main>
 
-    <footer>
-      <address></address>
-      <nav></nav>
-      <ul></ul>
+    <footer class="footer">
+        <address class="address">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
+      <nav class="footer__menu">
+        <ul class="no-circle">
+          <li class="footer__menu-list-item"><a href="#0" class="menu-link_active">главная</a></li>
+          <li class="footer__menu-list-item"><a href="#0" class="menu-link_active">посмотреть лоты</a></li>
+          <li class="footer__menu-list-item"><a href="#0" class="menu-link_active">об аукционе</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list no-circle">
+        <li><a href="#0"><img src="./images/yt.svg" alt="YouTube" class="footer__social-icon"></a></li>
+        <li><a href="#0"><img src="./images/vk.svg" alt="VK" class="footer__social-icon"></a></li>
+        <li><a href="#0"><img src="./images/pinterest.svg" alt="Pinterest" class="footer__social-icon"></a></li>
+      </ul>
     </footer>
   </body>
 </html>
