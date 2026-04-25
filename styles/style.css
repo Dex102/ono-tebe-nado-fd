@@ -1,7 +1,11 @@
 /* место для вашего кода */
 
-.menu-link_active:active {
+.link-active {
   text-decoration: none;
+}
+
+.no-circle {
+  list-style: none;
 }
 
 .header {
@@ -15,17 +19,14 @@
   display: flex;
   list-style: circle;
   justify-content: space-evenly;
-  font-size: 18px;
-  gap: 33px;
   padding-right: 41px;
+  gap: 33px;
+  text-underline-offset: 4px;
 }
 
-.header__menu a {
-  text-underline-offset: 2px;
-}
-
-.no-circle {
-  list-style: none;
+.header__menu-links {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header__logo {
@@ -61,11 +62,12 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 180px;
-  z-index: -2;
+  z-index: 0;
 }
 
 .overlay {
   position: absolute;
+  inset: 0;
   background-color: rgb(0 0 0 / 0.6);
   height: 100%;
   width: 100%;
@@ -84,7 +86,7 @@
   padding: 165px 20px 0 50px;
   gap: 18px;
   margin-bottom: 106px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .aligned-text_left {
@@ -103,7 +105,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  z-index: 1;
+  z-index: 2;
 }
 
 .cover__description-text {
@@ -157,32 +159,26 @@
   height: 100%;
   color: white;
   justify-content: space-between;
-  z-index: 2;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-link {
   height: 100%;
-  text-decoration-color: white;
-  text-underline-offset: 3px;
   text-decoration: none;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -190,11 +186,11 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 48px 40px 40px;
+  text-decoration: underline;
 }
 
 .card__text {
-  position: relative;
-  bottom: 48px;
+  margin-bottom: 44px;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -212,7 +208,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   justify-items: center;
-  height: 595px;
 }
 
 .about__logo {
@@ -242,13 +237,14 @@
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 100px;
 }
 
 .about__column-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 688px;
+  max-width: 688px;
 }
 
 .about__text {
@@ -268,6 +264,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  text-underline-offset: 3px;
+}
+
+.footer__menu-links {
   font-size: 18px;
   font-weight: 400;
 }
